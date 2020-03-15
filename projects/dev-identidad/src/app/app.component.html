@@ -1,0 +1,10 @@
+<div class="container-identidad">
+	<div *ngFor ="let item of identidad">
+    <div *ngIf="item.principal == true" class="back" [ngStyle]="{'height': '128px', 'width':'100%', 'position': 'relative', 'left': '0', 'top': '0'}">
+      <img src="{{item.image}}" class="ui-slp-background-identidad">
+			<div *ngIf='item.logo !== null' class="ui-slp-logo-identidad">
+				<img src="{{item.logo}}">
+			</div>
+		</div>
+	</div>
+</div>

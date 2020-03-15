@@ -1,0 +1,13 @@
+<section>
+  <strong>{{ label }}</strong>
+  <br />
+  <br />
+  <input (change)="onFileChanged($event)" #fileTnput style="display: none;" type="file" />
+  <button (click)="fileTnput.click()" mat-raised-button *ngIf="!file">
+    Seleccionar imagen
+  </button>
+  <span>{{ file?.name }}</span>
+  <button (click)="onDelete()" mat-icon-button matTooltip="Eliminar" *ngIf="file">
+    <mat-icon>delete</mat-icon>
+  </button>
+</section>

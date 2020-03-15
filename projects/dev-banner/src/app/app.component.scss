@@ -1,0 +1,98 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.container-banner{
+    height: 585px;
+    width:100%;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .container-banner {
+        height: 300px !important;
+    }
+}
+
+ngb-carousel .picsum-img-wrapper {
+
+    height: 585px !important;
+    padding: initial !important;
+    position: relative;
+    width: 100%;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    ngb-carousel .picsum-img-wrapper {
+        height: 300px !important;
+    }
+}
+
+ngb-carousel .picsum-img-wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ui-slp-btn-banner {
+  color: #FFFFFF;
+  background-color: #12963f;
+  border: #12963f;
+  padding: 10px 35px 10px 35px;
+  text-align: right;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Montserrat-Regular;
+  border-radius: 8px;
+}
+
+.ui-slp-btn-banner:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.ui-slp-banner-titulo{
+  font-size: 64px;
+  font-family: Montserrat-Semibold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.ui-slp-banner-subtitulo{
+  font-size: 30px;
+  font-family: Montserrat-Semibold;
+  color: #FFFFFF;
+}
+
+.ui-slp-banner-dependencia{
+  font-size: 15px;
+  font-family: Montserrat-Regular;
+  color: #FFFFFF;
+}
+
+.btn[_ngcontent-geh-c0]{
+  background-color: #12963f !important;
+}
+
+@media (max-width: 768px) {
+  .ui-slp-banner-titulo{
+    font-size: 40px !important;
+  }
+
+  .ui-slp-banner-subtitulo{
+    font-size: 17px !important;
+  }
+
+  .ui-slp-banner-dependencia{
+    font-size: 12px !important;
+  }
+
+  .ui-slp-btn-banner {
+    font-size: 12px !important;
+  }
+}

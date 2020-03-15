@@ -1,0 +1,31 @@
+<button type="button" class="share-popover" placement="top"
+        [ngbPopover]="popContent" [openDelay] ="300"> Compartir
+</button>
+
+<!--<shared-popover [id]="data.id"></shared-popover>-->
+
+<ng-template #popContent>
+  <div class="container-share">
+    <a class="icon-to-share" href="mailto:?Subject=[ASUNTO]&amp;Body=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FDisciplina-financiera-y-control-de-gasto%2C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx&text=Disciplina%20financiera%20y%20control%20de%20gasto%2C%20premisas%20para%20del%20presupuesto%20estatal%20202...&original_referer=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FInicio.aspx" target="_blank">
+      <i class="fa fa-at fa-3x"></i>
+    </a>
+    <a class="icon-to-share" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FDisciplina-financiera-y-control-de-gasto%2C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx&text=Disciplina%20financiera%20y%20control%20de%20gasto%2C%20premisas%20para%20del%20presupuesto%20estatal%20202...&original_referer=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FInicio.aspx" target="_blank">
+      <i class="fa fa-twitter fa-3x"></i>
+    </a>
+    <a class="icon-to-share" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FDisciplina-financiera-y-control-de-gasto%2C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx" target="_blank">
+      <i class="fa fa-facebook-f fa-3x"></i>
+    </a>
+    <a class="icon-to-share" href="https://www.instagram.com/gobedoslp/" target="_blank">
+      <i class="fa fa-instagram fa-3x"></i>
+    </a>
+    <a class="icon-to-share" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Fbeta.slp.gob.mx%252FFINANZAS%252FPaginas%252FDisciplina-financiera-y-control-de-gasto%252C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx" target="_blank">
+      <i class="fa fa-linkedin fa-3x"></i>
+    </a>
+    <!--<a class="icon-to-share" href="whatsapp://send?text=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FDisciplina-financiera-y-control-de-gasto%2C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx" target="_blank">
+      <i class="fa fa-whatsapp fa-3x"></i>
+    </a>-->
+    <a href="whatsapp://send?text=https%3A%2F%2Fbeta.slp.gob.mx%2FFINANZAS%2FPaginas%2FDisciplina-financiera-y-control-de-gasto%2C-premisas-para-del-presupuesto-estatal-2020-DPG.aspx" data-action="share/whatsapp/share" target="_blank">
+      <i class="fa fa-whatsapp fa-3x"></i>
+    </a>
+  </div>
+</ng-template>

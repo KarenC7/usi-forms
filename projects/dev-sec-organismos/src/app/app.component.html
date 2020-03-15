@@ -1,0 +1,249 @@
+
+  <style>
+
+
+div{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+.nav-item{
+  border-top: 1px solid gray;
+}
+
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+
+.titulo-secretaria{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+
+.siglas, .direcciones, .titulo-direccion, .telefono{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+}
+
+
+.titulo-direccion{
+  font-weight: 700;
+}
+
+.titulo-pagina{
+  padding-left: 10px;
+}
+
+.titulo-principal{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+}
+
+.contenido-organismos{
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+.titulo-pagina, .contenido-organismos{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/* ICONS */
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #920457;
+  color: white;
+}
+
+/*Reusados*/
+
+.ui-slp-separador_titulo {
+  width: 65px;
+  height: 3pt;
+  background: #b3112a;
+  margin-top: -5px;
+}
+
+  </style>
+  <div class="container ui-slp-sec-org">
+    <div class="row titulo-pagina">
+      <div class="col-md-12">
+        <h1 class="titulo-principal">
+          Secretarías y Organismos
+        </h1>
+      </div>
+      <div class="ui-slp-separador_titulo"></div>
+    </div>
+    <div class="row contenido-organismos">
+      <div class="col-12 col-md-3">
+        <ul class="nav flex-column">
+          <li class="nav-item active" *ngFor="let item of data">
+            <a class="nav-link" data-toggle="tab" href="#{{item.title}}">{{item.title}}</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="tab-content row">
+          <div class="tab-pane container active col-me-12" *ngFor="let item of data" id={{item.title}}>
+            <div class="row">
+              <h2 class="titulo-secretaria">
+                {{item.title}}
+              </h2>
+            </div>
+            <div class="row">
+              <h3 class="siglas col-12 col-md-12">{{item.letters}}</h3>
+            </div>
+            <div class="row informacion-contacto">
+              <div class="col-12 col-md-4 direccion">
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+
+                <h4 class="titulo-direccion">
+                  Dirección 1
+                </h4>
+                <p class="direcciones">
+                  {{item.address1}} #{{item.number1}}, {{item.colony1}}, {{item.town1}}, {{item.state1}}. C.P.: {{item.zc1}}
+                </p>
+                <p class="direcciones">
+                  {{item.address1}} #{{item.number1}}, {{item.colony1}}, {{item.town1}}, {{item.state1}}. C.P.: {{item.zc1}}
+                </p>
+              </div>
+              <div class="col-12 col-md-3 telefonos">
+                <span><i class="fa fa-trash-o"></i></span>
+                <p class="telefono">{{item.telephone}}</p>
+                <p class="telefono">{{item.phones}}</p>
+              </div>
+              <div class="col-12 col-md-5 redes-sociales">
+                <div class="row">
+                  <div class="col-12 col-md-3 icon-fb">
+                    <a href={{item.fb}} class="fa fa-facebook"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-tw">
+                    <a href={{item.fb}} class="fa fa-twitter"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-yt">
+                    <a href={{item.yt}} class="fa fa-youtube"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-in">
+                    <a href={{item.in}} class="fa fa-instagram"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane container active" id="menu1">
+            <div class="row">
+              <h2 class="titulo-secretaria">
+                {{item.title}}
+              </h2>
+            </div>
+            <div class="row">
+              <h3 class="siglas col-12 col-md-12">{{item.letters}}</h3>
+            </div>
+            <div class="row informacion-contacto">
+              <div class="col-12 col-md-4 direccion">
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+
+                <h4 class="titulo-direccion">
+                  Dirección 1
+                </h4>
+                <p class="direcciones">
+                  {{item.address1}} #{{item.number1}}, {{item.colony1}}, {{item.town1}}, {{item.state1}}. C.P.: {{item.zc1}}
+                </p>
+                <p class="direcciones">
+                  {{item.address1}} #{{item.number1}}, {{item.colony1}}, {{item.town1}}, {{item.state1}}. C.P.: {{item.zc1}}
+                </p>
+              </div>
+              <div class="col-12 col-md-3 telefonos">
+                <span><i class="fa fa-trash-o"></i></span>
+                <p class="telefono">667 777 777 7</p>
+                <p class="telefono">444 555 333 3</p>
+              </div>
+              <div class="col-12 col-md-5 redes-sociales">
+                <div class="row">
+                  <div class="col-12 col-md-3 icon-fb">
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-tw">
+                    <a href="https://www.facebook.com" class="fa fa-twitter"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-yt">
+                    <a href="https://www.facebook.com" class="fa fa-youtube"></a>
+                  </div>
+                  <div class="col-12 col-md-3 icon-in">
+                    <a href="https://www.facebook.com" class="fa fa-instagram"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu2">...</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <ul>
+    <li *ngFor="let item of data">
+      <a (click)="OnClick(item)">
+        {{ item.title}}
+      </a>
+
+    </li>
+  </ul>
+
+  {{data | json}}

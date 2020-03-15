@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DevSecretariasOrganismos</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    div{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .nav-item{
+      border-top: 1px solid gray;
+    }
+
+    .nav-link{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      color: #000;
+    }
+
+    .titulo-secretaria{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: #000;
+    }
+
+    .siglas, .direcciones, .titulo-direccion, .telefono{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: #000;
+    }
+
+
+    .titulo-direccion{
+      font-weight: 700;
+    }
+
+    .titulo-pagina{
+      padding-left: ;
+    }
+
+    .titulo-principal{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #000;
+    }
+
+    .contenido-organismos{
+      padding-right: 5em;
+      padding-left: 5em;
+    }
+
+    .titulo-pagina, .contenido-organismos{
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+
+    /* ICONS */
+    .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    /*Reusados*/
+
+    .ui-slp-separador_titulo {
+      width: 65px;
+      height: 3pt;
+      background: #b3112a;
+      margin-top: -5px;
+    }
+
+  </style>
+  <div class="container ui-slp-sec-org">
+    <div class="row titulo-pagina">
+      <div class="col-md-12">
+        <h1 class="titulo-principal">
+          Secretarías y Organismos
+        </h1>
+      </div>
+      <div class="ui-slp-separador_titulo"></div>
+    </div>
+    <div class="row contenido-organismos">
+      <div class="col-12 col-md-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="tab-content row">
+          <div class="tab-pane container active col-me-12" id="home">
+            <div class="row">
+              <h2 class="titulo-secretaria">
+                Archivo Historico
+              </h2>
+            </div>
+            <div class="row">
+              <h3 class="siglas col-12 col-md-12">Archivo Historico</h3>
+              <h3 class="siglas col-12 col-md-12">slp.gob.mx/ahistorico</h3>
+            </div>
+            <div class="row informacion-contacto">
+              <div class="col-12 col-md-4 direccion">
+                <h4 class="titulo-direccion">
+                  Dirección 1
+                </h4>
+                <p class="direcciones">
+                  Arista No. 400 Zona Centrp #7800 San Luis Potosí S.L.P.
+                </p>
+              </div>
+              <div class="col-12 col-md-4 telefonos">
+                <p class="telefono">01 (444)  812 11 11</p>
+                <p class="telefono">01 (444)  812 11 11</p>
+              </div>
+              <div class="col-12 col-md-4 redes-sociales">
+                <div class="row">
+                  <div class="col-12 col-md-4 icon-fb">
+                    <a href="#" class="fa fa-facebook"></a>
+                  </div>
+                  <div class="col-12 col-md-4 icon-tw">
+                    <a href="#" class="fa fa-twitter"></a>
+                  </div>
+                  <div class="col-12 col-md-4 icon-yt">
+                    <a href="#" class="fa fa-youtube"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu1">...</div>
+          <div class="tab-pane container fade" id="menu2">...</div>
+        </div>
+        <div class="row mapa-secretarias">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.4985554796576!2d-101.00598718521618!3d22.14508668540449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a98ca020e25df%3A0x3c5d84a95afa3b36!2sVista%20Hermosa%20450%2C%20Jard%C3%ADn%2C%20Fundadores%2C%2078270%20San%20Luis%2C%20S.L.P.!5e0!3m2!1ses-419!2smx!4v1584133950815!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tab panes -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

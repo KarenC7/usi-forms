@@ -1,0 +1,156 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.slide {
+  width: 100%;
+  margin: auto;
+  background-color:  #E6E6E6;
+}
+
+.ui-container-new {
+  min-width: 300px !important;
+  max-width: 530px;
+  margin: 80px auto 0 auto;
+  height: auto;
+  padding: 0 20px;
+}
+
+.icon-new {
+  color: #009a3e;
+}
+
+.content-new {
+  width: 100%;
+  margin: auto;
+}
+
+.ui-image-new {
+  width: 100%;
+  height: 275px;
+  margin: auto;
+  margin-bottom: 37px;
+}
+
+.ui-image-new>img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.ui-title-new {
+  width: 100%;
+  height: 6em;
+  overflow: hidden;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.ui-title-new>p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Montserrat-Semibold;
+}
+
+.ui-date-new{
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.ui-date-new>p{
+  font-family: Montserrat-Medium;
+  font-size: 14px;
+  color: #009a3e;
+  display: inline-block;
+}
+
+.ui-description-new{
+  width: 100%;
+  height: 5em;
+  overflow: hidden;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+.ui-description-new>p{
+  font-size: 16px;
+  font-family: Montserrat-Regular;
+}
+
+.ui-links-new {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.ui-read-new {
+  width: 50%;
+  display: inline-block;
+}
+
+.ui-read-new>a{
+  display: inline-block;
+  font-size: 14px;
+  color: #009a3e;
+  text-decoration: none;
+  font-family: Montserrat-Medium;
+}
+
+.ui-share-new {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+}
+
+.ui-share-icon {
+  display: inline-block;
+  width: auto;
+}
+
+.ui-share-link {
+  display: inline-block;
+}
+
+.ui-share-link>p{
+  color: #009a3e;
+  font-size: 14px;
+  font-family: Montserrat-Medium;
+}
+
+img
+{
+  width: 280px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p
+{
+  font-weight: 600;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+

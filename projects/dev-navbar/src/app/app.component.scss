@@ -1,0 +1,121 @@
+.max-width{
+  max-width: 1200px;
+  margin: auto;
+}
+.bg-dark {
+  background-color: #333!important;
+}
+.bg-pink {
+  background-color: #D8017D!important;
+}
+.bg-green {
+  background-color: #009A3E!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #D8017D;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #009A3E;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+  color: #D8017D;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+  color: #009A3E;
+}
+
+.font-weight-bold {
+  font-weight: 600!important;
+}
+@media (min-width: 992px) {
+  .navbar {
+    height: 47px;
+  }
+}
+.navbar-nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+.navbar-brand {
+  color: #9D9D9D;
+  font-family: 'Montserrat';
+  font-size: 25px;
+}
+.navbar-brand:hover {
+  color: #fff;
+}
+.point-red {
+  color: #D20826;
+}
+.dropdown {
+  position: initial;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #333;
+  margin: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+@media (min-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu:after{
+    background: linear-gradient(to right, #b3112a 50%, #569547 50%);
+    position: absolute;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: '';
+  }
+}
+.dropdown-item {
+  color: #333;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .dropdown-item {
+    display: inline-flex;
+    width: 25%;
+  }
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+@media (max-width: 991px) {
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+    color: #FFF;
+  }
+  .dropdown-item {
+    color: #FFF;
+  }
+}
+.dropdown-item span {
+  border-bottom: solid 2px transparent;
+}
+.dropdown-item:hover span {
+  border-bottom: solid 2px #009A3E;
+}
+

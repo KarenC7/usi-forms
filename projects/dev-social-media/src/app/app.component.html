@@ -1,0 +1,48 @@
+<div class="container-fluid" ng-app="listApp" ng-controller="mainCtrl">
+	<div class="row justify-content-around">
+		<div class="col-lg-4 ui-slp-social_container fb">
+			<div class="ui-slp-social_img">
+				<img src="/SiteAssets/Recursos/img/FACEBOOK.png">
+      </div>
+
+			<iframe class="ui-slp-facebook fb"
+				ng-src="{{'https://www.facebook.com/plugins/page.php?href='+ listredes[1].Facebook + '%2F&amp;tabs=timeline&amp;width=388&amp;height=220&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=424152677979292'}}"
+				width="388" height="220" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+				allowtransparency="true">
+			</iframe>
+    </div>
+
+		<div class="col-lg-4">
+			<div class="ui-slp-social_container">
+				<div class="ui-slp-social_img">
+					<img src="/SiteAssets/Recursos/img/TWITTER.png">
+				</div>
+				<a class="twitter-timeline" data-width="400" data-height="218" data-link-color="#17932b"
+					ng-href="{{listredes[0].Twitter}}"></a>
+			</div>
+		</div>
+  </div>
+
+	<div class="row justify-content-around">
+		<div class="col-lg-4 ui-slp-social_container fb">
+			<div class="ui-slp-social_img">
+				<img src="/SiteAssets/Recursos/img/FACEBOOK.png">
+			</div>
+			<iframe class="ui-slp-facebook fb"
+				ng-src="{{'https://www.facebook.com/plugins/page.php?href='+ listredes[1].Facebook + '%2F&amp;tabs=timeline&amp;width=388&amp;height=220&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=424152677979292'}}"
+				width="388" height="220" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+				allowtransparency="true">
+			</iframe>
+    </div>
+
+		<div class="col-lg-4">
+			<div class="ui-slp-social_container">
+				<div class="ui-slp-social_img">
+					<img src="/SiteAssets/Recursos/img/TWITTER.png">
+				</div>
+				<a class="twitter-timeline" data-width="400" data-height="218" data-link-color="#17932b"
+					ng-href="{{listredes[1].Twitter}}"></a>
+			</div>
+		</div>
+	</div>
+</div>

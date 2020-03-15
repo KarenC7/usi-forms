@@ -1,0 +1,22 @@
+<div class="container-banner">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let item of banner">
+      <div class="picsum-img-wrapper">
+        <img src="{{item.image}}" alt="">
+      </div>
+      <div class="carousel-caption" [ngStyle] = "{'text-align': item.posicionTexto | lowercase}">
+        <h1 *ngIf="item.activarTitulo == true" class="ui-slp-banner-titulo">
+          {{item.title}}
+        </h1>
+        <h3 *ngIf="item.activarTitulo == true" class="ui-slp-banner-subtitulo">
+          {{item.subtitulo}}
+        </h3>
+        <a *ngIf="item.activarBoton == true" role="button" class="btn ui-slp-btn-banner"
+            href="{{item.enlace}}" target="_blank">{{item.textoBoton}}</a>
+        <p *ngIf="item.activarTitulo == true" class="ui-slp-banner-dependencia">
+            {{item.dependencia}}
+        </p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

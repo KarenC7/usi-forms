@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+ngb-carousel .carousel-control-prev-icon{
+    background-image: url('/SiteAssets/Recursos/img/f-izquierda.png') !important;
+    width: 45px;
+    height: 45px;
+}
+
+ngb-carousel .carousel-control-next-icon{
+    background-image: url('/SiteAssets/Recursos/img/f-derecha.png') !important;
+    width: 45px;
+    height: 45px;
+}
+
+ngb-carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+ngb-carousel .carousel-indicators li {
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #b2b2b2;
+}
+
+ngb-carousel .carousel-indicators .active {
+    background-color: #12963f;
+    width: 12px !important;
+    height: 12px !important;
+}
